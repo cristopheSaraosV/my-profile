@@ -1,0 +1,31 @@
+<div class="p-2">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <h1 class="mb-4 fw-semibold">Experiencia Profesional  /></h1>
+    </div>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <p class="fw-light mb-4">
+        A lo largo de mi carrera profesional he adquirido experiencia en diversos roles y sectores, desarrollando
+        habilidades técnicas y de gestión. He trabajado en proyectos multidisciplinarios, liderando equipos y
+        colaborando en entornos dinámicos para alcanzar objetivos y aportar valor a las organizaciones.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    @for (experiencia of experiencias(); track $index) {
+    <div class="col-sm-12 col-md-8 col-lg-3 mb-sm-5 mb-md-4 mb-lg-0">
+      <mat-card class="experiencia-card h-100">
+        <mat-card-title>{{ experiencia.cargo }}</mat-card-title>
+        <mat-card-subtitle>
+          {{ experiencia.empresa }} | {{ experiencia.periodo }}
+        </mat-card-subtitle>
+        <mat-card-content>
+          <p>{{ experiencia.descripcion }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    }
+  </div>
