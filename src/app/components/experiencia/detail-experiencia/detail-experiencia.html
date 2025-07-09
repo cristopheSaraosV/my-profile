@@ -1,11 +1,11 @@
 <mat-card class="example-card" appearance="outlined">
     <mat-card-header class="mt-3 d-flex flex-column justify-content-start align-items-start ">
         <mat-card-title>{{experiencia().cargo}}</mat-card-title>
-        <span class="badge badge-periodo">{{experiencia().periodo}}</span>
+        <span class="badge badge-periodo">{{experiencia().periodo}}  | <strong class="fw-bold text-coffe">{{experiencia().empresa}}</strong> </span>
     </mat-card-header>
     <mat-card-content class="p-4">
         <h2 class="fw-bold">Descripción</h2>
-        <p>{{experiencia().descripcion}}</p>
+        <p>{{experiencia().descripcion}} </p>
 
         <mat-divider class="my-4" />
 
