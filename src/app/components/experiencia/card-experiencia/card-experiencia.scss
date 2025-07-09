@@ -1,0 +1,21 @@
+.experiencia-card {
+  background-color: #fdf6ec;
+  padding: 20px;
+  height: 100%;
+
+  mat-card-title {
+    font-weight: 600;
+    color: #6c3d33;
+  }
+
+  mat-card-subtitle {
+    font-size: 0.9rem;
+    color: #9e614a;
+  }
+
+  mat-card-content {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+}

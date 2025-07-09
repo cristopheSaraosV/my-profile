@@ -16,16 +16,8 @@
   </div>
   <div class="row justify-content-center align-items-center">
     @for (experiencia of experiencias(); track $index) {
-    <div class="col-sm-12 col-md-8 col-lg-3 mb-sm-5 mb-md-4 mb-lg-0">
-      <mat-card class="experiencia-card h-100">
-        <mat-card-title>{{ experiencia.cargo }}</mat-card-title>
-        <mat-card-subtitle>
-          {{ experiencia.empresa }} | {{ experiencia.periodo }}
-        </mat-card-subtitle>
-        <mat-card-content>
-          <p>{{ experiencia.descripcion }}</p>
-        </mat-card-content>
-      </mat-card>
+    <div class="col-sm-12 col-md-8 col-lg-3 mb-5 mb-md-4 mb-lg-0">
+      <app-card-experiencia [experiencia]="experiencia" (clickDetail)="openDialog($event)"/>
     </div>
     }
   </div>
