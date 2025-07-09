@@ -1,8 +1,9 @@
-import { ExperienciaI } from './../../components/experiencia/interface/experiencia.interface';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, inject, signal } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { CardExperiencia, } from '../../components/experiencia/card-experiencia/card-experiencia';
 import { DetailExperiencia } from '../../components/experiencia/detail-experiencia/detail-experiencia';
+import { ExperienciaI } from './../../components/experiencia/interface/experiencia.interface';
 @Component({
   selector: 'app-experiencia',
   imports: [CardExperiencia],
@@ -10,6 +11,8 @@ import { DetailExperiencia } from '../../components/experiencia/detail-experienc
   styleUrl: './experiencia.scss'
 })
 export class Experiencia {
+
+  private breakpoint = inject(BreakpointObserver);
 
   experiencias = signal<ExperienciaI[]>([
     {
@@ -43,9 +46,18 @@ export class Experiencia {
   readonly dialog = inject(MatDialog);
 
   openDialog(experiencia: ExperienciaI): void {
+    const isHandset = this.breakpoint.isMatched(Breakpoints.Handset);
+
+    if (isHandset) {
+      // opcional: mostrar un mensaje al usuario en vez de abrir el diálogo
+      console.warn('El diálogo no está disponible en móvil');
+      return;
+    }
+
     this.dialog.open(DetailExperiencia, {
       data: experiencia,
-      width: '800px',
+      closeOnNavigation:true,
+      width: '800px'
     });
   }
 }

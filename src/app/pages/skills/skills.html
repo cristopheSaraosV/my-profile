@@ -1,69 +1,37 @@
 <div class="p-2">
   <div class="row justify-content-center align-items-center">
     <div class="col-sm-12 col-md-6 col-lg-6">
-  <h1 class="mb-4 fw-semibold">Mis Skills  /></h1>
+      <h1 class="mb-4 fw-semibold">Mis Skills /></h1>
     </div>
   </div>
   <div class="row justify-content-center align-items-center">
     <div class="col-sm-12 col-md-6 col-lg-6">
-       <div class="p-3">
-    <h3 class="display-1">Skills frontend</h3>
-    <mat-chip-set aria-label="Skills tecnológicos">
+      <div class="p-3">
+        <h3 class="display-1">Skills frontend</h3>
+        <mat-chip-set aria-label="Skills tecnológicos">
 
-      <!-- Frontend -->
-      <mat-chip>Angular</mat-chip>
-      <mat-chip>Redux</mat-chip>
-      <mat-chip>NGRX (básico)</mat-chip>
-      <mat-chip>HTML5</mat-chip>
-      <mat-chip>CSS3</mat-chip>
-      <mat-chip>SASS</mat-chip>
-      <mat-chip>Bootstrap</mat-chip>
-    </mat-chip-set>
-  </div>
+          @for (skill of frontEnd(); track $index) {
+          <app-card-skill [skill]="skill" />
+          }
+        </mat-chip-set>
+      </div>
 
-  <div class="p-3">
-    <h3 class="display-1">Skills backend </h3>
-    <mat-chip-set aria-label="Skills tecnológicos">
-      <!-- Backend -->
-      <mat-chip>NestJS</mat-chip>
-      <mat-chip>ExpressJS</mat-chip>
-      <mat-chip>NodeJS</mat-chip>
+      <div class="p-3">
+        <h3 class="display-1">Skills backend </h3>
+        <mat-chip-set aria-label="Skills tecnológicos">
+          @for (skill of backEnd(); track $index) {
+          <app-card-skill [skill]="skill" />
+          }
+        </mat-chip-set>
+      </div>
 
-      <!-- Bases de Datos -->
-      <mat-chip>PL-SQL</mat-chip>
-      <mat-chip>Oracle</mat-chip>
-      <mat-chip>Listado de POD</mat-chip>
-      <mat-chip>Consulta de base de datos</mat-chip>
-    </mat-chip-set>
-  </div>
-
-  <div class="p-3">
-    <h3 class="display-1">Skills otras</h3>
-    <mat-chip-set aria-label="Skills tecnológicos">
-
-      <!-- Control de versiones & CI/CD -->
-      <mat-chip>Git</mat-chip>
-      <mat-chip>Git-Flow</mat-chip>
-      <mat-chip>GitLab</mat-chip>
-      <mat-chip>GitLab Registry</mat-chip>
-
-      <!-- Microservicios y Testing -->
-      <mat-chip>Mockoon</mat-chip>
-      <mat-chip>RxJS</mat-chip>
-      <mat-chip>Jest</mat-chip>
-
-      <!-- Project Management & Colaboración -->
-      <mat-chip>Confluence</mat-chip>
-      <mat-chip>Jira</mat-chip>
-      <mat-chip>Scrum (básico)</mat-chip>
-
-      <!-- Otros -->
-      <mat-chip>Linux (básico)</mat-chip>
-      <mat-chip>Docker (básico)</mat-chip>
-      <mat-chip>VS Code</mat-chip>
-
-
-    </mat-chip-set>
-  </div>
+      <div class="p-3">
+        <h3 class="display-1">Skills otras</h3>
+        <mat-chip-set aria-label="Skills tecnológicos">
+          @for (skill of others(); track $index) {
+            <app-card-skill [skill]="skill" />
+          }
+        </mat-chip-set>
+      </div>
     </div>
   </div>

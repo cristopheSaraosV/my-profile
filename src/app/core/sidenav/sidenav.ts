@@ -10,6 +10,7 @@ import { Home } from '../../pages/home/home';
 import { Skills } from '../../pages/skills/skills';
 import { SobreMi } from '../../pages/sobre-mi/sobre-mi';
 import { SidenavService } from '../../services/sidenav-service';
+import { CardSkill } from '../../components/skill/card-skill/card-skill';
 
 @Component({
   selector: 'app-sidenav',
@@ -24,7 +25,8 @@ import { SidenavService } from '../../services/sidenav-service';
     SobreMi,
     Experiencia,
     Skills,
-    Contacto
+    Contacto,
+    
   ],
   templateUrl: './sidenav.html',
   styleUrls: ['./sidenav.scss']
