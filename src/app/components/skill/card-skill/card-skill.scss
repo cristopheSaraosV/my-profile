@@ -1,8 +1,8 @@
 @use '../../../../styles/variables' as var;
 
 .card{
-    background: var.$coffee-medium-dark;
-    color: var.$coffee-text;
+    background: var.$coffee-shade-medium;
+    color: var.$text-color-coffee;
     font-weight: 500;
     cursor: default;
 }

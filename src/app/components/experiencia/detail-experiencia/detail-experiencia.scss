@@ -3,14 +3,14 @@
 
 mat-card-title{
     font-size: 30px;
-    color: var.$text-title;
+    color: var.$text-color-heading;
     font-weight: 700;
 }
 
 
 .badge-periodo{
     font-size: 18px;
-    color: var.$coffee-dark;
+    color: var.$coffee-shade-dark;
     font-weight: lighter;
     position: relative;
     top:5px;
@@ -19,9 +19,9 @@ mat-card-title{
 
 .tecnologiaSelected{
     transition: .3s all;
-    color: var.$coffee-text !important;
+    color: var.$text-color-coffee !important;
     font-weight: 700 !important;
-    background: var.$coffee-medium-dark !important;
+    background: var.$coffee-shade-medium !important;
 }
 
 p{

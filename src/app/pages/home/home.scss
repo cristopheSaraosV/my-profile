@@ -1,6 +1,9 @@
+@use '../../../styles/variables' as var;
+
+
 .card{
-    background: #f4eedf;
-    border: 1px solid #846a2c9f;
+    background:var.$card-background-color;
+    border: var.$card-border;;
 }
 
 .card-title{
@@ -10,4 +13,10 @@
 
 .card-text{
     font-size: 15px;
+}
+
+.enlace{
+    color: var.$coffee-shade-dark;
+    font-size: 17px;
+    font-weight: 500;
 }

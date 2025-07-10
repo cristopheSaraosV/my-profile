@@ -15,7 +15,7 @@ body {
 .example-sidenav {
   padding: var.$padding-drawer;
   box-sizing: border-box;
-  border-right: 1px solid var.$border-light;
+  border-right: 1px solid var.$border-color-light;
 }
 
 .example-sidenav-content {
@@ -29,12 +29,12 @@ body {
   width:  var.$btn-width;
   height: var.$btn-height;
   transition: var.$btn-transition;
-  color: var.$coffee-text;
-  background: var.$coffee-light;
+  color: var.$text-color-coffee;
+  background: var.$coffee-shade-light;
   border: none;
 
   &:hover {
-    background: var.$coffee-medium-dark !important;
+    background: var.$coffee-shade-medium !important;
   }
 }
 
