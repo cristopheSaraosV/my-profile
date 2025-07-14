@@ -1,0 +1,69 @@
+@use './styles/variables' as var;
+@use '@angular/material' as mat;
+@use 'sass:map';
+@use '../theme-colors' as custom;
+
+// 1. Tema Material
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+html, body {
+  height: var.$full-height;
+}
+
+body {
+  margin: 0;
+  font-family: var.$font-family-base;
+}
+
+// Clases de fondo con variables
+.bg-coffe-dark {
+  background: var.$coffee-shade-dark !important;
+  color:      var.$coffee-shade-light !important;
+}
+
+.bg-coffe-media-dark {
+  background: var.$coffee-shade-medium !important;
+  color:      var.$text-color-coffee !important;
+}
+
+.text-color-coffee{
+  background: var.$text-color-coffee !important;
+}
+
+.bg-coffe {
+  background: var.$coffee-shade-light !important;
+}
+
+.bg-color-coffee{
+  background: var.$text-color-coffee;
+}
+
+.text-coffe{
+  color: var.$text-color-heading !important;
+}
+
+.br-coffe{
+  border: 1px solid var.$text-color-heading !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color:      var.$text-color-heading !important;
+}
+
+h1 {
+  font-weight: 400 !important;
+}
+
+p{
+  font-size: 17px;
+  line-height: 20px;
+}

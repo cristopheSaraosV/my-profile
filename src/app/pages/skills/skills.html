@@ -1,0 +1,43 @@
+<div class="p-2">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <h1 class="fw-semibold">Mis Skills /></h1>
+      <p class="mb-3">
+        A lo largo de mi trayectoria he trabajado con un conjunto de herramientas y frameworks clave tanto en el
+        front-end como en el back-end. Cada una de ellas me ha permitido optimizar flujos de trabajo, mejorar el
+        rendimiento de las interfaces y ofrecer soluciones escalables. A continuación encontrarás mis principales
+        competencias agrupadas según su área de aplicación.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="p-3">
+        <h3 class="display-3">Skills frontend</h3>
+        <mat-chip-set aria-label="Skills tecnológicos">
+
+          @for (skill of frontEnd(); track $index) {
+          <app-card-skill [skill]="skill" />
+          }
+        </mat-chip-set>
+      </div>
+
+      <div class="p-3">
+        <h3 class="display-1">Skills backend </h3>
+        <mat-chip-set aria-label="Skills tecnológicos">
+          @for (skill of backEnd(); track $index) {
+          <app-card-skill [skill]="skill" />
+          }
+        </mat-chip-set>
+      </div>
+
+      <div class="p-3">
+        <h3 class="display-1">Skills otras</h3>
+        <mat-chip-set aria-label="Skills tecnológicos">
+          @for (skill of others(); track $index) {
+          <app-card-skill [skill]="skill" />
+          }
+        </mat-chip-set>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,30 @@
+@use '../../../../styles/variables' as var;
+
+
+mat-card-title{
+    font-size: 30px;
+    color: var.$text-color-heading;
+    font-weight: 700;
+}
+
+
+.badge-periodo{
+    font-size: 18px;
+    color: var.$coffee-shade-dark;
+    font-weight: lighter;
+    position: relative;
+    top:5px;
+    left: -11px;
+}
+
+.tecnologiaSelected{
+    transition: .3s all;
+    color: var.$text-color-coffee !important;
+    font-weight: 700 !important;
+    background: var.$coffee-shade-medium !important;
+}
+
+p{
+    font-size: 17px;
+}
+

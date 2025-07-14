@@ -1,0 +1,34 @@
+<mat-card class="example-card" appearance="outlined">
+    <mat-card-header class="mt-3 d-flex flex-column justify-content-start align-items-start ">
+        <mat-card-title>{{experiencia().cargo}}</mat-card-title>
+        <span class="badge badge-periodo">{{experiencia().periodo}} | <strong
+                class="fw-bold text-coffe">{{experiencia().empresa}}</strong> </span>
+    </mat-card-header>
+    <mat-card-content class="p-4">
+        <h2 class="fw-bold">Descripción</h2>
+        <p>{{experiencia().descripcion}} </p>
+
+        <mat-divider class="my-4" />
+
+        <h2 class="fw-bold">Tecnologias y lenguajes</h2>
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <mat-list role="list">
+                    @for (tecnologia of experiencia().tecnologias; track $index) {
+                    <mat-list-item [ngClass]="{'tecnologiaSelected': tecnologiaSelected() == tecnologia}"
+                        (click)="selectTecnologia(tecnologia)" role="listitem">
+                        {{tecnologia}}
+                    </mat-list-item>
+                    }
+
+                </mat-list>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+                <h2 class="fw-bold">{{tecnologiaSelected()}}</h2>
+                <p>{{descripcionTecnologia()}}</p>
+
+            </div>
+        </div>
+
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,40 @@
+@use '../../../styles/variables' as var;
+
+:host,
+html,
+body {
+  height: var.$full-height;
+  margin: 0;
+}
+
+.example-container {
+  height: var.$drawer-height;
+  width: 100%;
+}
+
+.example-sidenav {
+  padding: var.$padding-drawer;
+  box-sizing: border-box;
+  border-right: 1px solid var.$border-color-light;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-menu {
+  width:  var.$btn-width;
+  height: var.$btn-height;
+  transition: var.$btn-transition;
+  color: var.$text-color-coffee;
+  background: var.$coffee-shade-light;
+  border: none;
+
+  &:hover {
+    background: var.$coffee-shade-medium !important;
+  }
+}
+

@@ -1,0 +1,25 @@
+// Colores “coffee”
+$coffee-shade-dark       : #84692c !default;
+$coffee-shade-medium: #d4c7a8 !default;
+$coffee-shade-light      : #fffcf5 !default;
+$text-color-heading       : #6c3d33 !default;
+$text-color-coffee       : #362806 !default;
+
+$card-background-color : #f4eedf !default;
+$card-border-color     : #846a2c9f !default;
+$card-border           : 1px solid $card-border-color !default;
+
+// Neutros y bordes
+$border-color-light      : rgba(0, 0, 0, 0.1) !default;
+
+// Tipografía
+$font-family-base  : Roboto, "Helvetica Neue", sans-serif !default;
+
+// Tamaños
+$full-height       : 100% !default;
+$drawer-height     : 93% !default;
+$btn-width         : 200px !default;
+$btn-height        : 50px !default;
+$btn-transition    : 0.2s !default;
+
+$padding-drawer    : 20px !default;

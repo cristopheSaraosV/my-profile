@@ -1,0 +1,22 @@
+@use '../../../styles/variables' as var;
+
+
+.card{
+    background:var.$card-background-color;
+    border: var.$card-border;;
+}
+
+.card-title{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.card-text{
+    font-size: 15px;
+}
+
+.enlace{
+    color: var.$coffee-shade-dark;
+    font-size: 17px;
+    font-weight: 500;
+}

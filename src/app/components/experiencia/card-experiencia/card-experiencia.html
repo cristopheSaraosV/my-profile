@@ -1,0 +1,9 @@
+  <mat-card class="experiencia-card h-100" (click)="clickDetail.emit(experiencia())">
+        <mat-card-title>{{ experiencia().cargo }}</mat-card-title>
+        <mat-card-subtitle>
+          {{ experiencia().empresa }} | {{ experiencia().periodo }}
+        </mat-card-subtitle>
+        <mat-card-content>
+          <p>{{ experiencia().descripcion }}</p>
+        </mat-card-content>
+      </mat-card>

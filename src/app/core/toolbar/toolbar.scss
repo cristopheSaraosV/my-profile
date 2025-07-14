@@ -1,0 +1,15 @@
+@use "../../../styles/variables" as var;
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.bg-sidenav {
+  background: var.$text-color-heading;
+  color: white;
+}
+
+
+mat-icon {
+  color: var.$coffee-shade-medium;
+}

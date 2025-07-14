@@ -1,0 +1,59 @@
+<div class="p-2">
+  <div class="row justify-content-center align-items-center mt-4">
+    <!-- Ilustración / Avatar -->
+    <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+      <img src="assets/svg/programming.svg" class="img-fluid" alt="Programming illustration">
+    </div>
+
+    <!-- Card de presentación -->
+    <div class="col-sm-12 col-md-6 col-lg-6 mt-sm-4 mt-lg-0">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title mb-1">{{ profile().name }}</h5>
+          <div class="mb-3">
+            <small class="text-muted">
+              <span id="typewriter"></span>
+            </small>
+          </div>
+          <p class="card-text mb-4">{{ profile().detail }}</p>
+
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <button mat-raised-button class="text-color-coffee text-white" (click)="downloadCV()">
+              <mat-icon>file_download</mat-icon>
+              Descargar CV
+            </button>
+            <button mat-stroked-button class="bg-coffe-dark" (click)="openContact()">
+              <mat-icon>email</mat-icon>
+              Contáctame
+            </button>
+          </div>
+
+          <div class="d-flex gap-3 mb-4">
+            <a class="enlace" href="https://github.com/cristopheSaraosV" target="_blank" aria-label="GitHub"> Github
+            </a>
+            <a class="enlace" href="https://linkedin.com/in/cristopher-saraos/" target="_blank" aria-label="LinkedIn"> LinkedIn
+            </a>
+
+          </div>
+
+          <div class="row text-center">
+            <div class="col-12 col-md-6 mb-4 mb-lg-0">
+              <div class="border rounded p-2 br-coffe text-coffe">
+                <div class="h4 mb-0">4+</div>
+                <small>Años</small>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-4 mb-lg-0">
+              <div class="border rounded p-2 br-coffe text-coffe">
+                <div class="h4 mb-0">5+</div>
+                <small>Proyectos</small>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

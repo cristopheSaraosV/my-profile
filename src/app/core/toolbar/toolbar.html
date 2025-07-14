@@ -1,0 +1,17 @@
+<mat-toolbar class="bg-sidenav">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Menu"
+    (click)="openMenu()"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+ <span>Portafolio</span>
+  <span class="toolbar-spacer"></span>
+
+  <button (click)="changeMode(!isDarkMode())" matIconButton class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon> {{isDarkMode() ? 'bedtime' : 'light_mode'}} </mat-icon>
+  </button>
+
+</mat-toolbar>
