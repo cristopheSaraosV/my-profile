@@ -171,6 +171,22 @@ body {
   }
 }
 
+.secondary-button{
+   width: 140px!important;
+  height: 48px!important;
+  background: #fbf2e3 !important;
+  border: #bf8e4d 1px solid !important;
+  color: #4a2b02 1px solid !important;
+  border-radius: 8px!important;
+  transition: background 0.3s ease-out, color 0.4s ease-out !important;
+   &:hover {
+    background: #e8d8bb !important;
+    border: none !important;
+
+  }
+
+}
+
 
 h1, h2, h3, h4, h5, h6, p {
   color:      var.$text-color-heading !important;

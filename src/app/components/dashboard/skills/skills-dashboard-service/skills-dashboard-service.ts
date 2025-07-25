@@ -1,12 +1,12 @@
 import { Injectable, signal } from '@angular/core';
-import { Skill } from '../formulario-skill/interface/skill.interface';
+import { SkillDashboard } from '../formulario-skill/interface/skill-dashboard.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SkillsDashboardService {
-  readonly listadoSkillsUsuario = signal<Skill[]>([]);
-  readonly skillsSelected = signal<Skill | undefined>(undefined);
+  readonly listadoSkillsUsuario = signal<SkillDashboard[]>([]);
+  readonly skillsSelected = signal<SkillDashboard | undefined>(undefined);
 
   constructor() { }
 }
