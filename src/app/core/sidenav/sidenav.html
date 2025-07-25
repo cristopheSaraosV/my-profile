@@ -1,12 +1,12 @@
 <mat-sidenav-container class="example-container" autosize>
   <mat-sidenav #drawer mode="over" class="bg-coffe">
     <div class="d-flex flex-column align-items-start text-start ">
-      <button class="btn-menu" routerLink="/home" routerLinkActive="bg-coffe">
+      <button class="btn-menu" routerLink="/" routerLinkActive="bg-coffe">
         Inicio
       </button>
 
-      <button class="btn-menu" routerLink="/sobre-mi" routerLinkActive="bg-coffe" disabled>
-        Implementación
+      <button class="btn-menu" routerLink="/dashboard" routerLinkActive="bg-coffe">
+        DashBoard
       </button>
 
       
@@ -15,31 +15,6 @@
   </mat-sidenav>
 
   <mat-sidenav-content class="p-3 bg-coffe">
-
-    <section>
-      <app-home />
-    </section>
-
-    <mat-divider class="my-4" />
-    <section>
-      <app-sobre-mi />
-    </section>
-
-    <mat-divider class="my-4" />
-    <section>
-      <app-experiencia />
-    </section>
-
-    <mat-divider class="my-4" />
-    <section>
-      <app-skills />
-    </section>
-
-
-    <mat-divider class="my-4" />
-    <section>
-      <app-contacto />
-    </section>
-
+    <router-outlet></router-outlet>  
   </mat-sidenav-content>
 </mat-sidenav-container>

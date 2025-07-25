@@ -5,10 +5,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenav, MatSidenavModule } from '@angular/material/sidenav';
 import { RouterModule } from '@angular/router';
 import { Contacto } from '../../pages/contacto/contacto';
-import { Experiencia } from '../../pages/experiencia/experiencia';
-import { Home } from '../../pages/home/home';
-import { Skills } from '../../pages/skills/skills';
-import { SobreMi } from '../../pages/sobre-mi/sobre-mi';
+import { Experiencia } from '../../pages/public/experiencia/experiencia';
+import { Home } from '../../pages/public/home/home';
+import { Skills } from '../../pages/public/skills/skills';
+import { SobreMi } from '../../pages/public/sobre-mi/sobre-mi';
 import { SidenavService } from '../../services/sidenav-service';
 import { CardSkill } from '../../components/skill/card-skill/card-skill';
 
@@ -20,12 +20,6 @@ import { CardSkill } from '../../components/skill/card-skill/card-skill';
     MatButtonModule,
     MatIconModule, 
     RouterModule,
-    MatDivider,
-    Home,
-    SobreMi,
-    Experiencia,
-    Skills,
-    Contacto,
     
   ],
   templateUrl: './sidenav.html',

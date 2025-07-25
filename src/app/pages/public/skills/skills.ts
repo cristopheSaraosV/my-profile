@@ -1,7 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { MatChipsModule } from '@angular/material/chips';
-import { CardSkill } from '../../components/skill/card-skill/card-skill';
-import { SkillService } from '../../components/skill/service/skill-service';
+import { CardSkill } from '../../../components/skill/card-skill/card-skill';
+import { SkillService } from '../../../components/skill/service/skill-service';
 
 @Component({
   selector: 'app-skills',

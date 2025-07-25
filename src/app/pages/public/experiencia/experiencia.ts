@@ -1,9 +1,9 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, inject, signal } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { CardExperiencia, } from '../../components/experiencia/card-experiencia/card-experiencia';
-import { DetailExperiencia } from '../../components/experiencia/detail-experiencia/detail-experiencia';
-import { ExperienciaI } from './../../components/experiencia/interface/experiencia.interface';
+import { CardExperiencia, } from '../../../components/experiencia/card-experiencia/card-experiencia';
+import { DetailExperiencia } from '../../../components/experiencia/detail-experiencia/detail-experiencia';
+import { ExperienciaI } from '../../../components/experiencia/interface/experiencia.interface';
 @Component({
   selector: 'app-experiencia',
   imports: [CardExperiencia],
