@@ -55,6 +55,123 @@ body {
   border: 1px solid var.$text-color-heading !important;
 }
 
+
+.btn-guardar { 
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content:space-evenly !important;
+  align-items: center !important;
+
+  width: 140px !important;
+  height: 48px !important;
+  background: #a46301 !important;
+  border: none !important;
+  border-radius: 8px !important;
+  transition: background 0.3s ease-out, color 0.4s ease-out !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  letter-spacing: 0.0120588em !important;
+  color: #FFFFFF !important;
+  cursor: pointer !important;
+
+  &--confirmar {
+    width: 250px !important;
+    min-height: 52px !important;
+    height: 52px !important;
+  };
+
+  &--busqueda-xl {
+    min-width: 220px !important;
+    width: 220px !important;
+    min-height: 54px !important;
+    height: 54px !important;
+  };
+
+  &--busqueda-md {
+    min-width: 140px !important;
+    width: 140px !important;
+    min-height: 54px !important;
+    height: 54px !important;
+  };
+
+
+
+  &:hover {
+    background: #bf8c4d!important;
+    color: #FFFFFF!important;
+  }
+
+  &:active {
+    background: #734401!important;
+    color: #FFFFFF!important;
+  }
+
+  &:disabled {
+    background: #E9EBEC!important;
+    color: #79858E!important;
+    cursor: not-allowed!important;
+  }
+}
+
+.btn-limpiar { 
+  display: flex!important;
+  flex-direction: row!important;
+  justify-content:space-evenly!important;
+  align-items: center!important;
+
+  width: 140px!important;
+  height: 48px!important;
+  background: transparent!important;
+  border: #bf8e4d 1px solid!important;
+  border-radius: 8px!important;
+  transition: background 0.3s ease-out, color 0.4s ease-out !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  letter-spacing: 0.0120588em !important;
+  color: #bf8f4d !important;
+  cursor: pointer !important;
+
+  
+  &--busqueda-xl {
+    min-width: 220px !important;
+    width: 220px !important;
+    min-height: 52px !important;
+    height: 52px !important;
+    
+  };
+  &--busqueda-md {
+    min-width: 140px !important;
+    width: 140px !important;
+    min-height: 54px !important;
+    height: 54px !important;
+    
+  };
+
+
+  &:hover {
+    background: #bfa14d !important;
+    color: #FFFFFF !important;
+  }
+
+  &:active {
+    background: #734b01 !important;
+    color: #FFFFFF !important;
+  }
+
+  &:disabled {
+    background: #E9EBEC !important;
+    color: #79858E !important;
+    cursor: not-allowed !important;
+  }
+}
+
+
 h1, h2, h3, h4, h5, h6, p {
   color:      var.$text-color-heading !important;
 }
